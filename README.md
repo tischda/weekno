@@ -1,34 +1,22 @@
-﻿# go-cli-template
+# weekno
 
-Template for small [Go](https://www.golang.org) CLI projects.
+Utility written in [Go](https://www.golang.org) that prints the current week number.
 
-## Get started
-
-Name your project:
-~~~
-set PROJECT=my-project
-~~~
-
-Create repository and project folder with [Github CLI](https://github.com/cli/cli):
-~~~
-gh repo create %PROJECT% --confirm --public --template github.com/tischda/go-cli-template
-cd %PROJECT%
-go mod init github.com/tischda/%PROJECT%
-go generate template.go
-~~~
-
-Start coding.
-
-## Add modules
+### Install
 
 ~~~
-go mod tidy
-go mod vendor
+go install github.com/tischda/weekno@latest
 ~~~
 
-## Release project
+### Usage
 
 ~~~
-make test
-make release
+weekno
+~~~
+
+Example:
+
+~~~
+# weekno
+37
 ~~~

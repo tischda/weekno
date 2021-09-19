@@ -2,19 +2,13 @@ package main
 
 import (
 	"fmt"
-)
-
-const (
-	name = `Program`
-
-	usage = "\n%s does nothing.\n\n" +
-		"Usage: %s [OPTIONS] <args>...\n\nOPTIONS:\n"
+	"time"
 )
 
 // set via -ldflags
 var version string
 
 func main() {
-	parseFlags()
-	fmt.Println(name, " is doing nothing.")
+	_, week := time.Now().ISOWeek()
+	fmt.Printf("%d", week)
 }
