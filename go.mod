@@ -1,3 +1,3 @@
 module github.com/tischda/weekno
 
-go 1.17
+go 1.25
