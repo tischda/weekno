@@ -12,13 +12,19 @@ jobs:
   test-nocache:
     strategy:
       matrix:
-        go-version: [1.25.x]
+        go-version: stable
         os: [ubuntu-latest, macos-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-go@v5
+    - uses: actions/checkout@v5
+    - uses: actions/setup-go@v6
       with:
         go-version: ${{ matrix.go-version }}
         cache: false
-    - run: go test ./...
+    - run: go test -v -race -covermode=atomic -coverprofile="coverage.out" ./...
+
+    - name: Upload coverage to Coveralls
+      uses: coverallsapp/github-action@v2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-lcov: coverage.out
