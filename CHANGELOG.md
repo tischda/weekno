@@ -1,9 +1,9 @@
-# Change Log
-All notable changes to this project will be documented in this file.
+# Changelog
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/)
-and this project adheres to [Semantic Versioning](http://semver.org/).
+## [v1.0.1] - 20 October 2025
 
-## [v1.0.0] - 2021-09-19
+Update build system.
+
+## [v1.0.0] - 19 September 2021
 
 Initial release.
