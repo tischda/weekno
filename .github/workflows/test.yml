@@ -22,7 +22,6 @@ jobs:
         cache: false # no point in caching if go.sum is absent
 
     - name: Run tests with coverage
-      shell: cmd
       run: go test -v -race -covermode=atomic -coverprofile="coverage.out" ./...
 
     - name: Upload coverage to Coveralls
