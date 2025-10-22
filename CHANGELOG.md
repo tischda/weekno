@@ -1,6 +1,6 @@
 # Changelog
 
-## [v1.0.1] - 20 October 2025
+## [v1.0.1] - 22 October 2025
 
 Update build system.
 
