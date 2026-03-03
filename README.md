@@ -1,6 +1,6 @@
 [![Build Status](https://github.com/tischda/weekno/actions/workflows/build.yml/badge.svg)](https://github.com/tischda/weekno/actions/workflows/build.yml)
 [![Linter Status](https://github.com/tischda/weekno/actions/workflows/linter.yml/badge.svg)](https://github.com/tischda/weekno/actions/workflows/linter.yml)
-[![License](https://img.shields.io/github/license/tischda/weekno)](/LICENSE)
+[![License](https://img.shields.io/github/license/tischda/weekno.svg)](/LICENSE)
 [![Release](https://img.shields.io/github/release/tischda/weekno.svg)](https://github.com/tischda/weekno/releases/latest)
 
 # weekno
